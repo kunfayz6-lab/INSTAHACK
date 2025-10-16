@@ -46,7 +46,7 @@ printf "\e[1;92m[\e[0m\e[1;77m3\e[0m\e[1;92m]\e[0m\e[1;93m About\e[0m\n"
 printf "\e[1;92m[\e[0m\e[1;77m4\e[0m\e[1;92m]\e[0m\e[1;93m Update\e[0m\n"
 printf "\e[1;92m[\e[0m\e[1;77m4\e[0m\e[1;92m]\e[0m\e[1;93m Info\e[0m\n"
 printf "\e[1;92m[\e[0m\e[1;77m5\e[0m\e[1;92m]\e[0m\e[1;93m Exit\e[0m\n"
-read -p $'\n\e[1;92m[\e[0m\e[1;77m*\e[0m\e[1;92m] Choose an option: \e[0m' option
+read -p $'\n\e[1;92m[\e[0m\e[1;77m*\e[0m\e[1;92m] Choose an option: \033[0m' option
 
 if [[ $option == 1 || $option == 01 ]]; then
 cd $HOME/ighack/main
@@ -68,7 +68,7 @@ exit 1
 
 else
 echo
-printf "\e[1;93m [>!<] Invalid Selection!\033[0m"\n
+printf "\e[1;93m [>!<] Invalid Selection!\033[0m\"n
 sleep 1
 echo
 fi
