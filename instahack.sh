@@ -68,7 +68,7 @@ exit 1
 
 else
 echo
-printf "\e[1;93m [>!<] Invalid Selection!\e[0m\n"
+printf "\e[1;93m [>!<] Invalid Selection!\033[0m"\n
 sleep 1
 echo
 fi
